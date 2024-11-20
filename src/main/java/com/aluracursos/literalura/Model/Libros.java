@@ -27,7 +27,7 @@ public class Libros {
 
     public Libros(DatosLibros datosLibros, Autores autor) {
         this.titulo = datosLibros.titulo();
-        setLenguajes(datosLibros.languages().toString());//agregado el toString
+        setLenguajes(String.valueOf(datosLibros.languages()));//agregado el toString
         this.numeroDescargas = datosLibros.numeroDescargas();
         this.nombreAutor = autor.getName();
         this.autor = autor;
