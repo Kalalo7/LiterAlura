@@ -83,11 +83,11 @@ public class Libros {
 
     @Override
     public String toString() {
-        return "--------------- LIBRO 📖 ---------------" + "\n" +
+        return "~~~~~~~~~~~~~~~ Libro ~~~~~~~~~~~~~~~" + "\n" +
                 "Título: " + titulo + "\n" +
                 "Autor: " + nombreAutor + "\n" +
                 "Idioma: " + lenguajes + "\n" +
-                "Número de descargas: " + numeroDescargas + "\n" +
-                "------------------------------------" + "\n";
+                "Veces descargado: " + numeroDescargas + "\n" +
+                "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + "\n";
     }
 }
