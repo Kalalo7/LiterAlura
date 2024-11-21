@@ -34,7 +34,7 @@ Este proyecto es una aplicación en Java que permite la gestión de libros y aut
 1. Clonar el repositorio:
 
    ```bash
-   git clone [<URL_DEL_REPOSITORIO>](https://github.com/Kalalo7/literalura.git)
+   git clone https://github.com/Kalalo7/literalura.git
    cd <literalura>
    ```
 
