@@ -1,3 +1,4 @@
+
 # Gestión de Libros y Autores - Aplicación Java
 
 Este proyecto es una aplicación en Java que permite la gestión de libros y autores. Utiliza la API de [Gutendex](https://gutendex.com) para buscar información sobre libros y autores, y mantiene un registro local de los mismos.
@@ -33,24 +34,26 @@ Este proyecto es una aplicación en Java que permite la gestión de libros y aut
 1. Clonar el repositorio:
 
    ```bash
-   git clone https://github.com/Kalalo7/literalura.git
-   cd literalura
+   git clone <URL_DEL_REPOSITORIO>
+   cd <NOMBRE_DEL_PROYECTO>
+   ```
 
 2. Compilar y ejecutar el proyecto:
+
    ```bash
    javac Principal.java
    java Principal
+   ```
 
 3. Navegar por el menú interactivo para utilizar las distintas funcionalidades:
+   - Buscar libros.
+   - Registrar libros y autores.
+   - Consultar estadísticas y más.
 
-    -Buscar libros.
-    -Registrar libros y autores.
-    -Consultar estadísticas y más.
+## Ejemplo del Menú Principal
 
-   Ejemplo del Menú Principal
-   ```plaintext
-
-   Bienvenido! Por favor selecciona una opción:
+```plaintext
+Bienvenido! Por favor selecciona una opción:
 
 1 - | Buscar libros por título |
 2 - | Listar libros registrados |
@@ -60,25 +63,44 @@ Este proyecto es una aplicación en Java que permite la gestión de libros y aut
 6 - | Top 10 libros más descargados |
 7 - | Obtener estadísticas |
 0 - | Salir |
+```
 
-Funcionalidades Implementadas
-1. Búsqueda de Libros
+## Funcionalidades Implementadas
+
+### 1. Búsqueda de Libros
 Permite buscar un libro por título utilizando la API de Gutendex. Si el libro no está registrado localmente, se puede agregar junto con su autor.
 
-2. Listar Libros y Autores Registrados
+### 2. Listar Libros y Autores Registrados
 Muestra los libros y autores almacenados en la base de datos local, ordenados alfabéticamente.
 
-3. Filtrar Libros por Idioma
-Permite filtrar libros según su idioma (en, es, pt, fr).
+### 3. Filtrar Libros por Idioma
+Permite filtrar libros según su idioma (`en`, `es`, `pt`, `fr`).
 
-4. Consultar Autores Vivos en un Año
+### 4. Consultar Autores Vivos en un Año
 Devuelve una lista de autores vivos en el año especificado.
 
-5. Top 10 Libros Más Descargados
+### 5. Top 10 Libros Más Descargados
 Consulta y muestra los 10 libros con más descargas desde la API o la base de datos local.
 
-6. Estadísticas
+### 6. Estadísticas
 Genera estadísticas de descargas (promedio, máximo, mínimo) tanto desde la API como desde la base de datos local.
 
-Personalización
-Si deseas personalizar la URL base para consultas en la API, puedes modificar la constante URL_BASE en Principal.java:
+## Personalización
+
+Si deseas personalizar la URL base para consultas en la API, puedes modificar la constante `URL_BASE` en `Principal.java`:
+
+```java
+private final static String URL_BASE = "https://gutendex.com/books/?search=";
+```
+
+## Contribuciones
+
+Si deseas contribuir a este proyecto, por favor envía un Pull Request o reporta problemas en el repositorio.
+
+## Licencia
+
+Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+---
+
+¡Disfruta explorando y gestionando libros con esta aplicación!
