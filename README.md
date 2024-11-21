@@ -36,4 +36,49 @@ Este proyecto es una aplicación en Java que permite la gestión de libros y aut
    git clone https://github.com/Kalalo7/literalura.git
    cd literalura
 
-   
+2. Compilar y ejecutar el proyecto:
+   ```bash
+   javac Principal.java
+   java Principal
+
+3. Navegar por el menú interactivo para utilizar las distintas funcionalidades:
+
+    -Buscar libros.
+    -Registrar libros y autores.
+    -Consultar estadísticas y más.
+
+   Ejemplo del Menú Principal
+   ```plaintext
+
+   Bienvenido! Por favor selecciona una opción:
+
+1 - | Buscar libros por título |
+2 - | Listar libros registrados |
+3 - | Listar autores registrados |
+4 - | Listar autores vivos en un determinado año |
+5 - | Listar libros por idioma |
+6 - | Top 10 libros más descargados |
+7 - | Obtener estadísticas |
+0 - | Salir |
+
+Funcionalidades Implementadas
+1. Búsqueda de Libros
+Permite buscar un libro por título utilizando la API de Gutendex. Si el libro no está registrado localmente, se puede agregar junto con su autor.
+
+2. Listar Libros y Autores Registrados
+Muestra los libros y autores almacenados en la base de datos local, ordenados alfabéticamente.
+
+3. Filtrar Libros por Idioma
+Permite filtrar libros según su idioma (en, es, pt, fr).
+
+4. Consultar Autores Vivos en un Año
+Devuelve una lista de autores vivos en el año especificado.
+
+5. Top 10 Libros Más Descargados
+Consulta y muestra los 10 libros con más descargas desde la API o la base de datos local.
+
+6. Estadísticas
+Genera estadísticas de descargas (promedio, máximo, mínimo) tanto desde la API como desde la base de datos local.
+
+Personalización
+Si deseas personalizar la URL base para consultas en la API, puedes modificar la constante URL_BASE en Principal.java:
