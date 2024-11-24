@@ -1,7 +1,7 @@
 
 # Gestión de Libros y Autores - Aplicación Java
 
-Este proyecto es una aplicación en Java que permite la gestión de libros y autores. Utiliza la API de [Gutendex](https://gutendex.com) para buscar información sobre libros y autores, y mantiene un registro local de los mismos.
+Este proyecto es una aplicación en Java que permite la gestión de libros y autores. Es parte de un Challenge del Curso de Alura Latam - Oracle Next Education que engloba el uso de tecnologías de programación Java + Springboot + base de datos. Utiliza la API de [Gutendex](https://gutendex.com) para buscar información sobre libros y autores, y mantiene un registro local de los mismos.
 
 ## Características
 
@@ -119,6 +119,12 @@ Si deseas personalizar la URL base para consultas en la API, puedes modificar la
 
 ```java
 private final static String URL_BASE = "https://gutendex.com/books/?search=";
+```
+## Autores
+
+Martin Fauci 
+``` plaintext
+https://github.com/Kalalo7
 ```
 
 ## Contribuciones
