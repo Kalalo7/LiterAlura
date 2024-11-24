@@ -30,7 +30,7 @@ Este proyecto es una aplicación en Java que permite la gestión de libros y aut
 Abre tu gestor de base de datos (por ejemplo, PostgreSQL) y ejecuta el siguiente comando para crear la base de datos necesaria:
 
 ```sql
-CREATE DATABASE literatura;
+CREATE DATABASE literalura;
 ```
 
 ### 2. Configurar el archivo `application.properties`
@@ -38,7 +38,7 @@ CREATE DATABASE literatura;
 En el archivo `application.properties` de tu proyecto, asegúrate de incluir la configuración para conectarte a la base de datos. Un ejemplo para PostgreSQL es el siguiente:
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/literatura
+spring.datasource.url=jdbc:postgresql://localhost:5432/literalura
 spring.datasource.username=tu_usuario
 spring.datasource.password=tu_contraseña
 spring.jpa.hibernate.ddl-auto=update
@@ -60,8 +60,8 @@ Reemplaza `tu_usuario` y `tu_contraseña` con las credenciales de tu base de dat
 1. Clonar el repositorio:
 
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd <NOMBRE_DEL_PROYECTO>
+   git clone https://github.com/Kalalo7/literalura.git
+   cd literalura
    ```
 
 2. Configurar la base de datos según las instrucciones anteriores.
