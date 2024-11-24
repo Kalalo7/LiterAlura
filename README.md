@@ -21,6 +21,32 @@ Este proyecto es una aplicación en Java que permite la gestión de libros y aut
 - Dependencias de tu proyecto (asegúrate de incluirlas en tu archivo `pom.xml` o `build.gradle`, según tu gestor de dependencias):
   - `Spring Data JPA` (o alguna biblioteca para el manejo de repositorios).
   - Cliente HTTP para consumir la API de Gutendex.
+- Gestor de base de datos como PostgreSQL.
+
+## Configuración Inicial
+
+### 1. Crear la Base de Datos
+
+Abre tu gestor de base de datos (por ejemplo, PostgreSQL) y ejecuta el siguiente comando para crear la base de datos necesaria:
+
+```sql
+CREATE DATABASE literatura;
+```
+
+### 2. Configurar el archivo `application.properties`
+
+En el archivo `application.properties` de tu proyecto, asegúrate de incluir la configuración para conectarte a la base de datos. Un ejemplo para PostgreSQL es el siguiente:
+
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/literatura
+spring.datasource.username=tu_usuario
+spring.datasource.password=tu_contraseña
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+```
+
+Reemplaza `tu_usuario` y `tu_contraseña` con las credenciales de tu base de datos PostgreSQL.
 
 ## Estructura del Proyecto
 
@@ -34,18 +60,20 @@ Este proyecto es una aplicación en Java que permite la gestión de libros y aut
 1. Clonar el repositorio:
 
    ```bash
-   git clone https://github.com/Kalalo7/literalura.git
-   cd <literalura>
+   git clone <URL_DEL_REPOSITORIO>
+   cd <NOMBRE_DEL_PROYECTO>
    ```
 
-2. Compilar y ejecutar el proyecto:
+2. Configurar la base de datos según las instrucciones anteriores.
+
+3. Compilar y ejecutar el proyecto:
 
    ```bash
    javac Principal.java
    java Principal
    ```
 
-3. Navegar por el menú interactivo para utilizar las distintas funcionalidades:
+4. Navegar por el menú interactivo para utilizar las distintas funcionalidades:
    - Buscar libros.
    - Registrar libros y autores.
    - Consultar estadísticas y más.
